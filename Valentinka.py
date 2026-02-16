@@ -20,7 +20,7 @@ except:
 yes_rect = pygame.Rect(800, 600, 150, 60)
 no_rect = pygame.Rect(970, 600, 150, 60)
 
-# Состояния
+
 no_clicks = 0
 yes_clicked = False
 
@@ -86,7 +86,6 @@ while running:
     screen.blit(background, (0, 0))
 
     if not yes_clicked:
-        # Вопрос по середине
         question = font_big.render("Ты будешь моей валентинкой?", True, (255, 255, 255))
         question_rect = question.get_rect(center=(960, 400))
         screen.blit(question, question_rect)
@@ -96,13 +95,13 @@ while running:
         yes_text = font.render("ДА", True, (255, 255, 255))
         screen.blit(yes_text, yes_text.get_rect(center=yes_rect.center))
 
-        # Кнопка НЕТ (телепортируется)
+        # Кнопка НЕТ
         if no_rect.width > 40:
             pygame.draw.rect(screen, (70, 120, 255), no_rect, border_radius=10)
             no_text = font_small.render(no_texts[min(no_clicks, len(no_texts) - 1)], True, (255, 255, 255))
             screen.blit(no_text, no_text.get_rect(center=no_rect.center))
 
-            # Подсказка где кнопка НЕТ (если она далеко)
+            # Подсказка где кнопка НЕТ
             if no_clicks > 3:
                 hint = font_small.render("👆 Она здесь!", True, (255, 255, 255))
                 hint_rect = hint.get_rect(center=(no_rect.centerx, no_rect.top - 30))
