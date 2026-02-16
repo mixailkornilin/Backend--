@@ -1,5 +1,6 @@
 # Backend-
-Telegram-bot Tinder(Иметация общения со звёздами используя ВСТРОЕННЫЙ ChatGPT, 
+Telegram-bot Tinder(Иметация общения со звёздами используя ВСТРОЕННЫЙ ChatGPT, <img width="882" height="856" alt="image" src="https://github.com/user-attachments/assets/a62b3db0-6ba4-40c8-9c2b-d40d2999274a" />
+
 Генерация профайла используя 5 вопросов для приглашения на свидание)
 
 Telegram-bot DotaProTracker(Альтернатива сайту https://dota2protracker.net, позволяет узнать какие персонажи нынче популярны и что на них собирать с помощью парсинга сайта и API OpenDota,
